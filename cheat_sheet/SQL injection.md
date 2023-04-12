@@ -14,7 +14,7 @@ ex) select * from table where id='admin' and pw='password'
 -- 주석 뒤에 공백문자가 있어야 된다.  
 
 =   
-->  like in
+->  like in   
 ex) select * from table where id='admin'  
 ->  select * from table where id like 'admin'   
 ->  select * from table where id in('admin')   
