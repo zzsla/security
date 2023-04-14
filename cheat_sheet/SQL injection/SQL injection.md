@@ -80,7 +80,7 @@ select cot(1=0); # error (DOUBLE value is out of range in 'cot(1 = 0)')
 select cot(1=1); # ok   
 
 order by 뒤에 숫자 늘리면서 에러로 컬럼 수 파악   
-select * from users order by \[컬럼 개수\]; # 컬럼 개수 늘려가면서 에러로 개수 파악
+select * from users order by \[컬럼 개수\]; # 컬럼 개수 늘려가면서 에러로 개수 파악.  
 select * from users order by 1; # ok   
 select * from users order by 2; # ok   
 select * from users order by 3; # error -> users 테이블의 컬럼 개수는 2개인 것   
