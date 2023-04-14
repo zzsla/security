@@ -1,6 +1,6 @@
 # SQL injection
 
-### 필터링 우회
+### Filter Bypass(필터링 우회)
 
 OR/AND     
 ->  ||/&&   
