@@ -88,7 +88,7 @@ select * from users order by 3; # error -> users 테이블의 컬럼 개수는 2
 
 ### Blind SQL Injection
 Binary Search   
-select * from users where username='admin' and ascii(substr(password,1,1))>79;
+select * from users where username='admin' and ascii(substr(password,1,1))>79;   
 Bit 연산   
 select * from users where username='admin' and substr(bin(ord(password)),1,1)=1;   
 select * form users where username='admin' and substr(bin(ord(password)),2,1)=1;   
