@@ -41,7 +41,8 @@ select unhex(unhex(36313632)); -> ab
 '   
 ' or '1==1'#   
 ' or '1'='1   
-' or 1=1#
+' or 1=1#   
+"or""="";#
 <hr>
 
 ### Union SQL Injection
