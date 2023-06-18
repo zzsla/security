@@ -30,7 +30,9 @@ ex) select * from table where id='admin'
 * 주석 : /**/
 * 괄호 : ()
 * 더하기 : +  
-* back quote : \`   
+* back quote : \`
+* vertical tab(\v) : %0b
+* form feed(\f) : %0c
 ex) id='admin' or 1=1   
 ->  id='admin'%09or%091=1   
 ->  id='admin'%0aor%0a1=1   
